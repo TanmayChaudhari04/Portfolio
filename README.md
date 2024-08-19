@@ -1,8 +1,8 @@
 # Tanmay's Portfolio Website
 
-<img width="1439" alt="Screenshot 2024-07-20 at 11 53 46 AM" src="https://github.com/user-attachments/assets/73f1b0b5-7fc2-4952-8c56-0620bbdfd3c2">
+<img width="1440" alt="Portfolio" src="https://github.com/user-attachments/assets/0d7117b4-06e5-4bff-8eab-d6a1784decfb">
 
 
-Created a portfolio website using Vite+React and Tailwind CSS. 
+Created a portfolio website using Vite+React, Large Language Model (Meta Llama 3) and Tailwind CSS. 
 
 Access the website here: https://tanmaychaudhari04.github.io/Portfolio/
