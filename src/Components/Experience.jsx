@@ -34,22 +34,56 @@ function Experience() {
                                 <h3
                                     className="mb-1 text-lg font-semibold text-gray-900 dark:text-white"
                                     data-aos="fade-right">
+                                    Software Development Engineer Intern, Amazon
+                                </h3>
+                                <time
+                                    className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+                                    data-aos="fade-right">
+                                    May 2025 - Aug 2025
+                                </time>
+                                <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                                    <li data-aos="fade-right">
+                                        Built an LLM system with Java & AWS Bedrock to analyze 10K+ sellers, boosting enforcement speed and accuracy.
+                                    </li>
+                                    <li data-aos="fade-right">
+                                        Designed a scalable monitoring pipeline using AWS to rank high-risk sellers, integrated with brand enforcement.
+                                    </li>
+                                    <li data-aos="fade-right">
+                                        Partnered with teams to add real-time signals, cutting false positives and manual review workload by 35%.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li className="mb-10 ms-6">
+                                <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                                    <svg
+                                        className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor"
+                                        viewBox="0 0 20 20"
+                                    >
+                                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                    </svg>
+                                </span>
+                                <h3
+                                    className="mb-1 text-lg font-semibold text-gray-900 dark:text-white"
+                                    data-aos="fade-right">
                                     Software Engineer Intern, The Piper LLC
                                 </h3>
                                 <time
                                     className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
                                     data-aos="fade-right">
-                                    September 2024
+                                    September 2024 - May 2025
                                 </time>
                                 <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
                                     <li data-aos="fade-right">
-                                        Brainstorming and implementing UI/UX designs using Figma, ensuring an intuitive user interface.
+                                        Built iOS frontend in Swift from Figma mockups, delivering responsive UX for riders and drivers.
                                     </li>
                                     <li data-aos="fade-right">
-                                        Aim to build core features in Go, Swift, and Rust, integrating Stripe and Mapbox, enhancing user experience.
+                                        Engineered WebSocket live updates & OTP verification, reducing fraudulent rides by 40%.
                                     </li>
                                     <li data-aos="fade-right">
-                                        Managing code using Git for version control, and utilizing XCode for efficient and robust development.
+                                        Implemented Mapbox geolocation & proximity rules while contributing to app architecture and logic.
                                     </li>
                                 </ul>
                             </li>
@@ -73,7 +107,7 @@ function Experience() {
                                 <time
                                     className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
                                     data-aos="fade-right">
-                                    January 2024
+                                    January 2024 - May 2025
                                 </time>
                                 <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
                                     <li data-aos="fade-right">
@@ -107,7 +141,7 @@ function Experience() {
                                 <time
                                     className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
                                     data-aos="fade-right">
-                                    August 2023
+                                    August 2023 - December 2023
                                 </time>
                                 <ul className="space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
                                     <li data-aos="fade-right">
