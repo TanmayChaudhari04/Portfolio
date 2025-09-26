@@ -71,7 +71,7 @@ function Assistant() {
       "https://router.huggingface.co/v1/chat/completions",
       {
         headers: {
-          Authorization: `Bearer ${import.meta.env.VITE_APP_HUGGINGFACE_API_KEY}`,
+          Authorization: `Bearer ${import.meta.env.VITE_APP_HF_API_KEY}`,
           "Content-Type": "application/json"
         },
         method: "POST",
