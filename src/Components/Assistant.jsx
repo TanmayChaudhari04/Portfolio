@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext, useRef } from 'react';
 import { Context } from '../App';
 import Typed from "typed.js";
 import tResume from "../assets/Tanmay'sResume.pdf";
+import ResumeString from "../assets/Resume"; // <-- import your ResumeString
 
 function Assistant() {
   const [replyText, setReplyText] = useState('');
@@ -25,54 +26,67 @@ function Assistant() {
   }, []);
 
   useEffect(() => {
-    setReplyText("I'm a passionate Software Engineer.");
+    setReplyText(
+      "I'm a Software Engineer with a strong background in AI/ML, full-stack development, and designing scalable cloud systems."
+    );
   }, []);
 
-  const handleSendMessage = (e) => {
+  const handleSendMessage = async (e) => {
     e.preventDefault();
     if (requestText.trim() !== '' && !isLoading) {
       setIsLoading(true);
-      setReplyText(''); // Clear the reply text to start fresh
+      setReplyText('');
 
-      const streamCallback = (chunk) => {
-        setReplyText((prev) => prev + chunk);
-      };
-
+      const userMessage = { role: 'user', content: requestText };
       const fullMessages = [
+        {
+          role: 'system',
+          content: `${ResumeString}\n\nIMPORTANT: Always respond in exactly 50 words or less. Be concise and direct.`
+        },
         ...messages,
-        { role: 'user', content: `Answer in 50 words. Question: ${requestText}` }
+        {
+          role: 'user',
+          content: `Answer in exactly 50 words or less: ${requestText}`
+        }
       ];
 
-      query({
-        model: "meta-llama/Meta-Llama-3-8B-Instruct:novita",
-        messages: fullMessages,
-        stream: true
-      }, streamCallback)
-        .then((finalResult) => {
-          setMessages([
-            ...fullMessages,
-            { role: 'assistant', content: finalResult }
-          ]);
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-          setReplyText("Sorry, something went wrong.");
-        })
-        .finally(() => {
-          setIsLoading(false);
-        });
-      
-      setRequestText('');
+      let finalResponse = '';
+
+      try {
+        finalResponse = await query(
+          {
+            model: "llama-3.1-8b-instant",
+            messages: fullMessages,
+            stream: true,
+            max_tokens: 75,
+            temperature: 0.3,
+          },
+          (chunk) => setReplyText((prev) => prev + chunk)
+        );
+
+        setMessages([
+          ...messages, 
+          userMessage, 
+          { role: 'assistant', content: finalResponse }
+        ]);
+
+      } catch (error) {
+        console.error("Error:", error);
+        setReplyText("Sorry, something went wrong. Please try again!");
+      } finally {
+        setIsLoading(false);
+        setRequestText('');
+      }
     }
   };
 
   async function query(data, onStream) {
     const response = await fetch(
-      "https://router.huggingface.co/v1/chat/completions",
+      "https://api.groq.com/openai/v1/chat/completions",
       {
         headers: {
           Authorization: `Bearer ${import.meta.env.VITE_APP_HF_API_KEY}`,
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
         method: "POST",
         body: JSON.stringify(data),
@@ -111,7 +125,7 @@ function Assistant() {
 
           if (content) {
             fullText += content;
-            onStream(content); // This will trigger setReplyText update
+            onStream(content);
           }
         } catch (error) {
           console.error("Error parsing event chunk:", error, "Chunk:", jsonString);

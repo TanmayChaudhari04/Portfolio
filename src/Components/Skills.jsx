@@ -18,18 +18,32 @@ function Skills(){
                         <hr data-aos="fade-right" className="w-80 h-1 ml-16 my-6"></hr>
                     </div>
                     <div className="px-16">  
-                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right">C++</button>
+                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right">Java</button>
                         <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right">Python</button>
-                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right">C#</button>
+                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right">C++</button>
                         <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right">Javascript</button>
-                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right">React</button>                        
+                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right">Typescript</button>                        
                     </div>
                     <div className="px-16 pt-6">  
-                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right" data-aos-duration="500">SQL</button>
-                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right" data-aos-duration="500">Firebase</button>
-                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right" data-aos-duration="500">Tailwind CSS</button>
-                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right" data-aos-duration="500">Node.js</button>
-                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right" data-aos-duration="500">AWS</button>                        
+                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right">Swift</button>
+                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right">C#</button>
+                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right">SQL</button>
+                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right">HTML5</button>
+                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right">CSS</button>                        
+                    </div>
+                    <div className="px-16 pt-6">  
+                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right" data-aos-duration="500">AWS</button>
+                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right" data-aos-duration="500">Docker</button>
+                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right" data-aos-duration="500">Github</button>
+                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right" data-aos-duration="500">Figma</button>
+                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right" data-aos-duration="500">Firebase</button>                        
+                    </div>
+                    <div className="px-16 pt-6">  
+                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right">Pandas</button>
+                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right">PyTorch</button>
+                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right">Numpy</button>
+                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right">ReactJS</button>
+                        <button class="cursor-default bg-transparent hover:bg-sky-500 text-white font-semibold hover:text-black py-2.5 px-16 ml-16 border border-sky-500 hover:border-transparent rounded" data-aos="fade-right">NextJS</button>                        
                     </div>
                 </div>
             </div>
