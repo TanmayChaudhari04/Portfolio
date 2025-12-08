@@ -1,13 +1,13 @@
 import React from "react";
-import { useEffect} from "react";
+import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
 function Experience() {
-    
-    useEffect(()=>{
+
+    useEffect(() => {
         AOS.init()
-    },[]);
+    }, []);
 
     return (
         <>
@@ -49,7 +49,7 @@ function Experience() {
                                         Designed a scalable monitoring pipeline using AWS to rank high-risk sellers, integrated with brand enforcement.
                                     </li>
                                     <li data-aos="fade-right">
-                                        Partnered with teams to add real-time signals, cutting false positives and manual review workload by 35%.
+                                        Partnered with teams to add real-time signals, cutting false positives and manual review workload by 10%.
                                     </li>
                                 </ul>
                             </li>
@@ -80,7 +80,7 @@ function Experience() {
                                         Built iOS frontend in Swift from Figma mockups, delivering responsive UX for riders and drivers.
                                     </li>
                                     <li data-aos="fade-right">
-                                        Engineered WebSocket live updates & OTP verification, reducing fraudulent rides by 40%.
+                                        Engineered WebSocket live updates & OTP verification, reducing fraudulent rides by 15%.
                                     </li>
                                     <li data-aos="fade-right">
                                         Implemented Mapbox geolocation & proximity rules while contributing to app architecture and logic.

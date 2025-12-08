@@ -2,25 +2,25 @@ import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { TbMail } from "react-icons/tb";
-import { useEffect} from "react";
+import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
-function Contact(){
+function Contact() {
 
-    useEffect(()=>{
+    useEffect(() => {
         AOS.init()
-    },[]);
+    }, []);
 
     return (
         <>
             <div id="Contact">
-            <div>
-                <div data-aos="fade-right">
-                    <h1 className="text-white text-3xl ml-20 font-semibold mt-20">Contact</h1>
-                    <hr className="w-80 h-1 ml-16 my-6"></hr>
-                </div>
-                <div className="flex mt-6 gap-2 ml-16">
+                <div>
+                    <div data-aos="fade-right">
+                        <h1 className="text-white text-3xl ml-20 font-semibold mt-20">Contact</h1>
+                        <hr className="w-80 h-1 ml-16 my-6"></hr>
+                    </div>
+                    <div className="flex mt-6 gap-2 ml-16">
                         <div className="flex items-center justify-center">
                             <div className="flex space-x-4">
                                 <a href="mailto:tanmayschaudhari@gmail.com" target={"_blank"} className="text-sky-400 hover:text-sky-500 rounded-full p-2">

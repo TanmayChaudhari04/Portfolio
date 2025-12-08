@@ -6,7 +6,7 @@ import Skills from './Components/Skills.jsx';
 import Projects from './Components/Projects.jsx';
 import Experience from './Components/Experience.jsx';
 import Contact from './Components/Contact.jsx';
-import Assistant  from './Components/Assistant.jsx';
+import Assistant from './Components/Assistant.jsx';
 import ResumeString from './assets/Resume.jsx';
 
 export const Context = React.createContext();
@@ -26,16 +26,16 @@ function App() {
   }, []);
 
   return (
-    <Context.Provider value={[ messages, setMessages]}>
-    <div className="bg-gray-900 w-full">
-      <Nav></Nav>
-      <Assistant></Assistant>
-      {/* <About></About> */}
-      <Skills></Skills>
-      <Projects></Projects>
-      <Experience></Experience>
-      <Contact></Contact>
-    </div>
+    <Context.Provider value={[messages, setMessages]}>
+      <div className="bg-gray-900 w-full">
+        <Nav></Nav>
+        <Assistant></Assistant>
+        {/* <About></About> */}
+        <Skills></Skills>
+        <Projects></Projects>
+        <Experience></Experience>
+        <Contact></Contact>
+      </div>
     </Context.Provider>
   );
 }

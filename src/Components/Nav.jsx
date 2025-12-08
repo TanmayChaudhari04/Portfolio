@@ -1,16 +1,16 @@
-import {Link} from "react-scroll";
+import { Link } from "react-scroll";
 import React, { useState } from 'react'
-import { useEffect} from "react";
+import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import { FaTimes } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
 
-function Nav(){
-    
-    useEffect(()=>{
+function Nav() {
+
+    useEffect(() => {
         AOS.init()
-    },[]);
+    }, []);
 
     const [click, setClick] = useState(false);
 
@@ -43,27 +43,27 @@ function Nav(){
                     </div>
                     <div className="lg:flex md:flex lg: flex-1 items center justify-end font-normal hidden">
                         <div className="flex-10">
-                        <ul className="flex gap-8 mr-16 text-[18px]">
-                            <Link spy={true} smooth={true} to="About">
-                                <li className="hover:text-sky-500 transition border-b-2 border-slate-900 hover:border-sky-500 cursor-pointer">About</li>
-                            </Link>
-                            <Link spy={true} smooth={true} to="Experience">
-                                <li className="hover:text-sky-500 transition border-b-2 border-slate-900 hover:border-sky-500 cursor-pointer">Experience</li>
-                            </Link>
-                            <Link spy={true} smooth={true} to="Projects">
-                                <li className="hover:text-sky-500 transition border-b-2 border-slate-900 hover:border-sky-500 cursor-pointer">Projects</li>
-                            </Link>
-                            <Link spy={true} smooth={true} to="Contact">
-                                <li className="hover:text-sky-500 transition border-b-2 border-slate-900 hover:border-sky-500 cursor-pointer">Contact</li>
-                            </Link>
-                        </ul>
+                            <ul className="flex gap-8 mr-16 text-[18px]">
+                                <Link spy={true} smooth={true} to="About">
+                                    <li className="hover:text-sky-500 transition border-b-2 border-slate-900 hover:border-sky-500 cursor-pointer">About</li>
+                                </Link>
+                                <Link spy={true} smooth={true} to="Experience">
+                                    <li className="hover:text-sky-500 transition border-b-2 border-slate-900 hover:border-sky-500 cursor-pointer">Experience</li>
+                                </Link>
+                                <Link spy={true} smooth={true} to="Projects">
+                                    <li className="hover:text-sky-500 transition border-b-2 border-slate-900 hover:border-sky-500 cursor-pointer">Projects</li>
+                                </Link>
+                                <Link spy={true} smooth={true} to="Contact">
+                                    <li className="hover:text-sky-500 transition border-b-2 border-slate-900 hover:border-sky-500 cursor-pointer">Contact</li>
+                                </Link>
+                            </ul>
                         </div>
                     </div>
                     <div>
                         {click && content}
                     </div>
                     <button className="block sm:hidden transition text-3xl" onClick={handleClick}>
-                        {click ? <FaTimes/> : <IoMenu/>}
+                        {click ? <FaTimes /> : <IoMenu />}
                     </button>
                 </div>
             </nav>

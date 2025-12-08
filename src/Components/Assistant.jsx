@@ -65,8 +65,8 @@ function Assistant() {
         );
 
         setMessages([
-          ...messages, 
-          userMessage, 
+          ...messages,
+          userMessage,
           { role: 'assistant', content: finalResponse }
         ]);
 
@@ -85,7 +85,7 @@ function Assistant() {
       "https://api.groq.com/openai/v1/chat/completions",
       {
         headers: {
-          Authorization: `Bearer ${import.meta.env.VITE_APP_HF_API_KEY}`,
+          Authorization: `Bearer ${atob(import.meta.env.VITE_APP_HF_API_KEY)}`,
           "Content-Type": "application/json",
         },
         method: "POST",
